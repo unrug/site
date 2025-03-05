@@ -1,1 +1,647 @@
-A website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNRUGGEABLE - The First Truly Unruggeable Token on Solana</title>
+    <meta name="description" content="Unruggeable is a revolutionary token on Solana with automatic fee distribution every 59 seconds. 100% secure, verified and audited.">
+    <meta name="keywords" content="unruggeable, token, cryptocurrency, solana, crypto, fee distribution, passive income, secure token, anti-rug">
+    <meta name="author" content="Unruggeable Team">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxNGI4YTYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTIgMjJzOC00IDgtMTBWNWwtOC0zLTggM3Y3YzAgNiA4IDEwIDggMTB6Ij48L3BhdGg+PC9zdmc+" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxNGI4YTYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTIgMjJzOC00IDgtMTBWNWwtOC0zLTggM3Y3YzAgNiA4IDEwIDggMTB6Ij48L3BhdGg+PC9zdmc+">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unruggeable.site/">
+    <meta property="og:title" content="UNRUGGEABLE - The First Truly Unruggeable Token">
+    <meta property="og:description" content="Join the revolution with Unruggeable token. Automatic fee distribution every 59 seconds, 100% secure and verified.">
+    <meta property="og:image" content="./Token.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://unruggeable.site/">
+    <meta property="twitter:title" content="UNRUGGEABLE - Earn Passive Income Every 59 Seconds">
+    <meta property="twitter:description" content="The first truly unruggeable token on Solana with automatic fee distribution. 100% secure, audited and verified.">
+    <meta property="twitter:image" content="./Token.png">
+
+    <!-- Theme color for browser -->
+    <meta name="theme-color" content="#b87333">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://unruggeable.site/">
+
+    <!-- Robots directive -->
+    <meta name="robots" content="index, follow">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-gradient-copper-ochre {
+            background-image: linear-gradient(to right, #b45309, #059669);
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .from-yellow-600 {
+            --tw-gradient-from: #d97706;
+        }
+        .to-teal-600 {
+            --tw-gradient-to: #0d9488;
+        }
+        .hero-bg-gradient {
+            background-image: linear-gradient(to bottom, rgba(13, 148, 136, 0.5), rgba(180, 83, 9, 0.3));
+            mix-blend-mode: multiply;
+        }
+        .copper {
+            background-color: #b87333;
+        }
+        .copper-gradient {
+            background-image: linear-gradient(to right, #b87333, #da9e5b);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+<!-- Navigation -->
+<nav class="bg-gray-800 border-b border-teal-900">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span class="text-2xl font-bold bg-gradient-to-r from-yellow-600 to-teal-600 text-gradient">UNRUGGEABLE</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+            <a href="#features" class="text-gray-300 hover:text-white">Features</a>
+            <a href="#tokenomics" class="text-gray-300 hover:text-white">Tokenomics</a>
+            <a href="#roadmap" class="text-gray-300 hover:text-white">Roadmap</a>
+            <a href="#faq" class="text-gray-300 hover:text-white">FAQ</a>
+        </div>
+        <a href="#" id="nav-buy-btn" class="copper-gradient px-4 py-2 rounded-lg font-medium text-white hover:opacity-90 transition-opacity">
+            Buy Token
+        </a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="relative">
+    <div class="absolute inset-0 hero-bg-gradient pointer-events-none"></div>
+    <div class="max-w-6xl mx-auto px-4 py-20 md:py-32 relative z-10">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                <span class="bg-gradient-to-r from-yellow-500 to-teal-400 text-gradient">UNRUGGEABLE</span>
+            </h1>
+            <p class="text-2xl mb-8 text-gray-200">The first truly unruggeable token on Solana, with automatic fee distribution every <span id="distribution-seconds-text">59</span> seconds.</p>
+            <div class="bg-gray-800 p-6 rounded-xl border border-teal-700 mt-8">
+                <p class="text-yellow-500 font-bold text-lg mb-2">🔒 Anti-Rug Protection:</p>
+                <p class="text-gray-300">To ensure complete transparency and security, the first major fee distribution will occur <span id="launch-date-text">today</span> at <span id="launch-time-text">12:00 AM (UTC-6)</span>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Distribution Countdown -->
+<div class="bg-gray-800 border-y border-teal-900">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+        <h3 class="text-xl font-semibold mb-4 text-yellow-500">First Distribution Countdown:</h3>
+        <div id="launch-countdown" class="flex flex-wrap justify-center gap-4 my-6">
+            <div class="bg-gray-900 rounded-lg p-4 w-24">
+                <div id="days" class="text-3xl font-bold text-teal-400 mb-1">00</div>
+                <div class="text-xs text-gray-400">DAYS</div>
+            </div>
+            <div class="bg-gray-900 rounded-lg p-4 w-24">
+                <div id="hours" class="text-3xl font-bold text-teal-400 mb-1">00</div>
+                <div class="text-xs text-gray-400">HOURS</div>
+            </div>
+            <div class="bg-gray-900 rounded-lg p-4 w-24">
+                <div id="minutes" class="text-3xl font-bold text-teal-400 mb-1">00</div>
+                <div class="text-xs text-gray-400">MINUTES</div>
+            </div>
+            <div class="bg-gray-900 rounded-lg p-4 w-24">
+                <div id="seconds" class="text-3xl font-bold text-teal-400 mb-1">00</div>
+                <div class="text-xs text-gray-400">SECONDS</div>
+            </div>
+        </div>
+        <p class="text-gray-300">After launch, distributions will occur <span class="text-yellow-500 font-bold">every <span id="distribution-seconds-text2">59</span> seconds</span> automatically.</p>
+    </div>
+</div>
+
+<!-- Features -->
+<section id="features" class="py-16 md:py-24 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-yellow-500 to-teal-400 text-gradient">Key Features</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-6 rounded-xl border border-teal-800 hover:border-teal-600 transition-colors">
+                <div class="bg-teal-900/50 p-3 rounded-lg inline-block mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 10v12"></path>
+                        <path d="M17 2v12"></path>
+                        <path d="M17 14H7"></path>
+                        <path d="M7 2l10 10"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-yellow-500">Automatic Distribution</h3>
+                <p class="text-gray-300">Fees distributed every <span class="distribution-seconds-text3">59</span> seconds to all holders proportionally, with no need for staking or manual claiming.</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-xl border border-teal-800 hover:border-teal-600 transition-colors">
+                <div class="bg-teal-900/50 p-3 rounded-lg inline-block mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-yellow-500">100% Unruggeable</h3>
+                <p class="text-gray-300">Renounced contract, locked liquidity, and verified code. The team cannot extract funds under any circumstances.</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-xl border border-teal-800 hover:border-teal-600 transition-colors">
+                <div class="bg-teal-900/50 p-3 rounded-lg inline-block mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-yellow-500">Complete Audit</h3>
+                <p class="text-gray-300">Audited by leading blockchain security firms to ensure the code is secure and truly unruggeable.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tokenomics -->
+<section id="tokenomics" class="py-16 md:py-24 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-yellow-500 to-teal-400 text-gradient">Tokenomics</h2>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 text-yellow-500">Fee Distribution</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 mr-3 flex-shrink-0">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span class="text-gray-200">5% fee per transaction</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 mr-3 flex-shrink-0">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span class="text-gray-200">4% distributed to all holders every <span class="distribution-seconds-text3">59</span> seconds</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 mr-3 flex-shrink-0">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span class="text-gray-200">1% for service maintenance and operations</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-xl border border-teal-800">
+                <h3 class="text-2xl font-semibold mb-6 text-yellow-500">Supply & Distribution</h3>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-300">Total Supply</span>
+                            <span class="text-white font-semibold">1,000,000,000</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="copper-gradient h-2.5 rounded-full w-full"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-300">Circulating</span>
+                            <span class="text-white font-semibold">700,000,000 (70%)</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="copper-gradient h-2.5 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-300">Locked Liquidity</span>
+                            <span class="text-white font-semibold">250,000,000 (25%)</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="copper-gradient h-2.5 rounded-full" style="width: 25%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-300">Team & Development</span>
+                            <span class="text-white font-semibold">50,000,000 (5%)</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="copper-gradient h-2.5 rounded-full" style="width: 5%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Roadmap -->
+<section id="roadmap" class="py-16 md:py-24 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-yellow-500 to-teal-400 text-gradient">Roadmap</h2>
+
+        <div class="relative">
+            <!-- Center line -->
+            <div class="absolute left-0 md:left-1/2 h-full w-px bg-teal-800 transform md:translate-x-px"></div>
+
+            <!-- Phase 1 -->
+            <div class="relative z-10 mb-12 md:mb-0">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                        <div class="bg-gray-800 p-6 rounded-xl border border-teal-800 inline-block">
+                            <h3 class="text-xl font-semibold mb-2 text-yellow-500">Q1 2025 - Launch</h3>
+                            <ul class="text-gray-300 list-disc ml-5">
+                                <li>Token launch on Solana</li>
+                                <li>First fee distribution at <span id="launch-time-text2">12:00 AM UTC-6</span></li>
+                                <li>Security audit</li>
+                                <li>Locked liquidity</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center w-8 h-8 rounded-full bg-teal-600 border-4 border-gray-900 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                        <span class="text-white font-bold">1</span>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="relative z-10 mb-12 md:mb-0 md:mt-24">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                    <div class="flex items-center justify-center w-8 h-8 rounded-full bg-teal-600 border-4 border-gray-900 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                        <span class="text-white font-bold">2</span>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0">
+                        <div class="bg-gray-800 p-6 rounded-xl border border-teal-800 inline-block">
+                            <h3 class="text-xl font-semibold mb-2 text-yellow-500">Q2 2025 - Expansion</h3>
+                            <ul class="text-gray-300 list-disc ml-5">
+                                <li>Community expansion</li>
+                                <li>Strategic partnerships</li>
+                                <li>dApp development</li>
+                                <li>Distribution analytics dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="relative z-10 md:mt-24">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                        <div class="bg-gray-800 p-6 rounded-xl border border-teal-800 inline-block">
+                            <h3 class="text-xl font-semibold mb-2 text-yellow-500">Q3 2025 - Innovation</h3>
+                            <ul class="text-gray-300 list-disc ml-5">
+                                <li>dApp launch with dashboard</li>
+                                <li>Staking implementation with additional rewards</li>
+                                <li>Expansion to other blockchains</li>
+                                <li>Enhanced security measures</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center w-8 h-8 rounded-full bg-teal-600 border-4 border-gray-900 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                        <span class="text-white font-bold">3</span>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-16 md:py-24 bg-gray-800">
+    <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-yellow-500 to-teal-400 text-gradient">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+            <div class="border border-teal-800 rounded-lg">
+                <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                    <span class="font-medium text-lg text-yellow-500">What does 'unruggeable' mean?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-content hidden px-6 pb-4 text-gray-300">
+                    It means the team cannot extract holders' funds or abandon the project. The liquidity is permanently locked, the contract is renounced, and the code is verified and audited to ensure there are no hidden functions.
+                </div>
+            </div>
+
+            <div class="border border-teal-800 rounded-lg">
+                <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                    <span class="font-medium text-lg text-yellow-500">How are fees distributed?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-content hidden px-6 pb-4 text-gray-300">
+                    4% of each transaction is accumulated and automatically distributed every <span class="distribution-seconds-text3">59</span> seconds to all holders in proportion to their holdings. No staking or manual claiming is required. An additional 1% is used to maintain services and operations.
+                </div>
+            </div>
+
+            <div class="border border-teal-800 rounded-lg">
+                <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                    <span class="font-medium text-lg text-yellow-500">When does the first distribution happen?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-content hidden px-6 pb-4 text-gray-300">
+                    The first major fee distribution is scheduled for <span id="launch-date-text2">today</span> at <span id="launch-time-text3">12:00 AM (UTC-6)</span>. After that, distributions will occur automatically every <span class="distribution-seconds-text3">59</span> seconds.
+                </div>
+            </div>
+
+            <div class="border border-teal-800 rounded-lg">
+                <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                    <span class="font-medium text-lg text-yellow-500">What is the maximum supply?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-content hidden px-6 pb-4 text-gray-300">
+                    The maximum supply is 1,000,000,000 tokens, with no capability for additional minting to ensure there is no inflation.
+                </div>
+            </div>
+
+            <div class="border border-teal-800 rounded-lg">
+                <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                    <span class="font-medium text-lg text-yellow-500">How can I verify the token is truly unruggeable?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-content hidden px-6 pb-4 text-gray-300">
+                    You can review the verified code on the Solana explorer, confirm that liquidity is locked, and review the audit reports that will be available on our website.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="buy" class="py-16 md:py-24 bg-gray-900 border-t border-teal-900">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-yellow-500 to-teal-400 text-gradient">
+            Be part of the unruggeable revolution
+        </h2>
+        <p class="text-xl mb-8 text-gray-300">
+            Join the first truly secure community in the crypto space. Earn automatic rewards every <span class="distribution-seconds-text3">59</span> seconds just by holding.
+        </p>
+        <div class="bg-gray-800 p-6 rounded-xl border border-teal-700 mt-8 max-w-2xl mx-auto">
+            <p class="text-yellow-500 font-bold text-lg mb-2">⚠️ Important Notice:</p>
+            <p class="text-gray-300">To prevent rug pulls, our first major distribution will occur <span id="launch-date-text3">today</span> at <span id="launch-time-text4">12:00 AM (UTC-6)</span>. After that, holders will automatically receive their share of fees every <span class="distribution-seconds-text3">59</span> seconds.</p>
+        </div>
+        <div class="mt-8">
+            <a href="#" id="footer-buy-btn" class="copper-gradient px-8 py-4 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity inline-block">
+                Buy Token
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 border-t border-teal-900 py-8">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-6 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span class="text-2xl font-bold bg-gradient-to-r from-yellow-600 to-teal-600 text-gradient">UNRUGGEABLE</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://x.com/unruggeable" class="text-gray-300 hover:text-teal-400 transition-colors">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                </a>
+                <a href="https://github.com/unrug/" class="text-gray-300 hover:text-teal-400 transition-colors">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-gray-400 text-sm">
+            &copy; <span id="current-year"></span> Unruggeable. All rights reserved. <br/>
+            <span class="text-teal-600">Unruggeable. Secure. Transparent.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // CONFIGURATION VARIABLES
+    // -------------------------------------------
+    // Set these variables to change key aspects of the site
+
+    // Distribution interval in seconds
+    const DISTRIBUTION_INTERVAL = 59;
+
+    // Launch date configuration
+    const LAUNCH_DATE = {
+        // Set to "today" or "tomorrow" or a specific date like "March 15, 2025"
+        dateText: "today",
+        // Time of launch (displayed in text)
+        timeText: "04:00 AM (UTC-6)",
+        // Time of launch for countdown calculation (24h format)
+        hour: 4,
+        minute: 0,
+        second: 0,
+        // UTC offset in hours
+        utcOffset: -6
+    };
+
+    // Buy token link
+    const BUY_TOKEN_LINK = "https://pump.fun/";
+    const TOKEN_NAME = "UNR";
+    // -------------------------------------------
+
+    // Apply the distribution interval
+    document.getElementById('distribution-seconds-text').textContent = DISTRIBUTION_INTERVAL;
+    document.getElementById('distribution-seconds-text2').textContent = DISTRIBUTION_INTERVAL;
+    const distributionElements = document.querySelectorAll('.distribution-seconds-text3');
+    distributionElements.forEach(el => {
+        el.textContent = DISTRIBUTION_INTERVAL;
+    });
+
+    // Apply the launch date text
+    document.getElementById('launch-date-text').textContent = LAUNCH_DATE.dateText;
+    document.getElementById('launch-date-text2').textContent = LAUNCH_DATE.dateText;
+    document.getElementById('launch-date-text3').textContent = LAUNCH_DATE.dateText;
+
+    // Apply the launch time text
+    document.getElementById('launch-time-text').textContent = LAUNCH_DATE.timeText;
+    document.getElementById('launch-time-text2').textContent = LAUNCH_DATE.timeText;
+    document.getElementById('launch-time-text3').textContent = LAUNCH_DATE.timeText;
+    document.getElementById('launch-time-text4').textContent = LAUNCH_DATE.timeText;
+
+    // Apply buy token links
+    document.getElementById('nav-buy-btn').href = BUY_TOKEN_LINK;
+    document.getElementById('footer-buy-btn').href = BUY_TOKEN_LINK;
+
+    document.getElementById('nav-buy-btn').innerText = "Buy Token "+TOKEN_NAME
+    document.getElementById('footer-buy-btn').innerText = "Buy Token "+TOKEN_NAME;
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Calculate launch time based on configuration
+    function getTargetDate() {
+        const now = new Date();
+        let target;
+
+        if (LAUNCH_DATE.dateText.toLowerCase() === "today") {
+            target = new Date(now);
+        } else if (LAUNCH_DATE.dateText.toLowerCase() === "tomorrow") {
+            target = new Date(now);
+            target.setDate(target.getDate() + 1);
+        } else {
+            // Try to parse a specific date
+            target = new Date(LAUNCH_DATE.dateText);
+        }
+
+        // Set specified time
+        target.setHours(LAUNCH_DATE.hour, LAUNCH_DATE.minute, LAUNCH_DATE.second, 0);
+
+        // If it's already past the target time today, and we specified "today", move to tomorrow
+        if (LAUNCH_DATE.dateText.toLowerCase() === "today" && now > target) {
+            target.setDate(target.getDate() + 1);
+        }
+
+        // Adjust for UTC offset
+        const utcOffsetMs = LAUNCH_DATE.utcOffset * 60 * 60 * 1000;
+        const utcTime = target.getTime() + (target.getTimezoneOffset() * 60 * 1000);
+        return new Date(utcTime + utcOffsetMs);
+    }
+
+    // Update countdown timer for launch
+    function updateLaunchCountdown() {
+        const now = new Date();
+        const target = getTargetDate();
+        const diff = target - now;
+
+        if (diff <= 0) {
+            // Launch time has passed
+            document.getElementById('days').textContent = '00';
+            document.getElementById('hours').textContent = '00';
+            document.getElementById('minutes').textContent = '00';
+            document.getElementById('seconds').textContent = '00';
+
+            // Change the countdown display to show the distribution timer
+            const countdownSection = document.getElementById('launch-countdown').parentElement;
+            countdownSection.innerHTML = `
+                <h3 class="text-xl font-semibold mb-4 text-yellow-500">Next Distribution In:</h3>
+                <div class="text-5xl font-bold text-teal-400 mb-4" id="distribution-countdown">${DISTRIBUTION_INTERVAL}</div>
+                <p class="text-gray-300">Distributions occur <span class="text-yellow-500 font-bold">every ${DISTRIBUTION_INTERVAL} seconds</span> automatically.</p>
+            `;
+
+            // Start the distribution countdown
+            startDistributionCountdown();
+            return;
+        }
+
+        // Calculate days, hours, minutes, and seconds
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        // Update the countdown display
+        document.getElementById('days').textContent = String(days).padStart(2, '0');
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    // Start the distribution countdown
+    function startDistributionCountdown() {
+        let seconds = DISTRIBUTION_INTERVAL;
+        const distributionCountdown = document.getElementById('distribution-countdown');
+
+        const intervalId = setInterval(() => {
+            seconds--;
+
+            if (seconds < 0) {
+                seconds = DISTRIBUTION_INTERVAL;
+                // Simulate a distribution event
+                const notification = document.createElement('div');
+                notification.className = 'fixed bottom-4 right-4 bg-teal-900 text-white px-6 py-3 rounded-lg shadow-lg z-50';
+                notification.innerHTML = `
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                        <span>Fee distribution complete! Next in ${DISTRIBUTION_INTERVAL} seconds.</span>
+                    </div>
+                `;
+                document.body.appendChild(notification);
+
+                // Remove notification after 3 seconds
+                setTimeout(() => {
+                    notification.remove();
+                }, 3000);
+            }
+
+            distributionCountdown.textContent = seconds;
+        }, 1000);
+    }
+
+    // Initial countdown update
+    updateLaunchCountdown();
+
+    // Update countdown every second
+    setInterval(updateLaunchCountdown, 1000);
+
+    // FAQ accordion functionality
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+
+            // Toggle content visibility
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+
+            // Only apply smooth scrolling to anchors, not to external links
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
